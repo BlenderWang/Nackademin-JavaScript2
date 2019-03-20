@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        .container {
+            width: 50%;
+        }
+        .signInIcon {
+            width: 4rem;
+            height: 4rem;
+            background-color: #17a2b8;
+            color: whitesmoke;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+        .fa-sign-in-alt {
+            font-size: 2rem;
+        }
+        .err-username, .err-password {
+            color: indianred;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signInIcon my-2 d-flex justify-content-center align-items-center">
+            <i class="fas fa-sign-in-alt"></i>
+        </div>
+        <h1 class="h3 mb-3 font-weight-normal text-info">jQuery Sign In Form</h1>
+
+        <form class="form-signin">
+            <label for="username" class="username">Username</label>
+            <input type="text" id="username" class="form-control" placeholder="Username" required autofocus>
+            <p class="err-username px-1"></p>
+            <br>
+
+            <label for="inputPassword" class="password">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <p class="err-password px-1"></p>
+            <br>
+            <!-- <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div> -->
+            <button id="submit" class="btn btn-lg btn-outline-info btn-block" disabled type="submit" name="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
