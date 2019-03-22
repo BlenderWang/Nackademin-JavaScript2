@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+.strike {
+    text-decoration: line-through;
+    background-color: #f3105413;
+}
+.table th {
+    border-top: none;
+    width: 50%;
+    margin: 2rem;
+    border: none;
+}
+.checked {
+    transform: translateY(-10px);
+}
+.deleteBtn {
+    float: right;
+    background: indianred;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    padding: 5px 15px;
+    margin-top: 6px;
+    border-radius: 4px;
+}
