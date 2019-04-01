@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS</title>
+</head>
+<body>
+    <h2>AngularJs</h2>
+    <h4>Demo 6: Angular init</h4>
+    <div ng-app>
+        <!-- ng-repeat -->
+        <div ng-init="months=['jan', 'feb, 'mar']">
+            <div ng-repeat="month in months">
+                {{month}}
+            </div>
+        </div>
+
+        <h3>List of months in a year</h3>
+        <ul>
+            <li ng-repeat="el in months">{{el}} </li>
+        </ul>
+
+        <h3>Table</h3>
+        <table>
+            <tr ng-repeat="el in months">
+                <td>{{month}} </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-animate.js"></script>
+</body>
+</html>

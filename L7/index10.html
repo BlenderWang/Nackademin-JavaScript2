@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS</title>
+</head>
+<body ng-app="app">
+    <h2>AngularJs Demo 10</h2>
+
+    <table>
+        <tr class="table table-hover" ng-controller="carCtrl">
+            <th>RegNr</th>
+            <th>Model</th>
+        </tr>
+        <tr ng-repeat="car in cars">
+            <td>{{car.RegNr}}</td>
+            <td>{{car.Model}}</td>
+        </tr>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-animate.js"></script>
+    <script>
+        const app = angular.module('carApp', [])
+        app.controller('carCtrl', ($scope) => {
+            $scope.cars = [
+                {
+                    RegNr: "ABC123",
+                    Model: "Volvo X30"
+                },
+                {
+                    RegNr: "XYZ987",
+                    Model: "Volvo X30"
+                }
+            ]
+        })
+
+    </script>
+</body>
+</html>

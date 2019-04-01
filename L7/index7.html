@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS</title>
+</head>
+<body>
+    <h2>AngularJs Demo 7</h2>
+    <h3>Working with Modules</h3>
+
+    <div ng-app="app">
+        <h2 ng-controller="myCtrl as c">
+            {{ ${c.firstName} ${c.lastName} }}
+        </h2>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-animate.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        const app = angular.module('app', [])
+        app.controller('myCtrl', () => {
+            this.firstName = 'Mooncake'
+            this.lastName = 'Dspace'
+        })
+
+    </script>
+</body>
+</html>
